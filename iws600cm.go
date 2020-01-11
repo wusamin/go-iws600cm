@@ -40,9 +40,6 @@ func (i Iws600cm) SetDebug(b bool) {
 
 // List executes command "list". Value iws600cm received is sent to channel send of args.
 func (i Iws600cm) List() []string {
-	fmt.Println("path: " + i.libPath)
-
-	// コマンドの戻り値が必ず1で失敗するため、エラーを無視する
 	// To execute "iws600cm list" returns "exit status 1" and fail every, so ignore err.
 	r, _ := exec.Command(i.libPath, LIST).Output()
 
