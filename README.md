@@ -14,7 +14,7 @@ $ go get -u github.com/wusamin/go-iws600cm
 
 ## Usage
 ```
-// create instance.
+// create instance and specify commnad path.
 i := NewIws600cm("/home/wusa/local/iws600cm-0.1.0/iws600cm")
 
 // make channel
